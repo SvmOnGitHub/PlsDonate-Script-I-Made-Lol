@@ -4,6 +4,7 @@ queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus 
 
 queueteleport([[
     repeat task.wait() until game:IsLoaded()
+    wait(8)
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/SvmOnGitHub/PlsDonate-Script-I-Made-Lol/main/Lua')))()
 ]])
 
