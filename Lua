@@ -28,9 +28,9 @@ function getRichestPlayerInServer()
     return richestPlayer
 end
 
-if getRichestPlayerInServer().leaderstats.Donated.Value > 250000 then
+if getRichestPlayerInServer().leaderstats.Donated.Value > 250000 or getRichestPlayerInServer().leaderstats.Donated - getRichestPlayerInServer().leaderstats.Raised.Value >= 50000 then
     httprequest({
-    Url = 'https://discord.com/api/webhooks/1062109639497494598/bRQcnuenynBGBVbfYi6RzXwKMAvLdWl7bROQmmlUcbarNUblpvFrR2OKAKb4bvBI9fWL',
+    Url = 'https://discord.com/api/webhooks/1062414888443588688/7Gww1RR4pKUQcxZMMleakcltKv1q1CpaYppmVdQC3Svvs1VyGriPpU4mfc8z1XtIFeag',
     Body = httpservice:JSONEncode({
         ["embeds"] = {{
             ["title"] = "**Rich User Found 💰💸**",
