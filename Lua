@@ -30,7 +30,7 @@ end
 
 if getRichestPlayerInServer().leaderstats.Donated.Value > 200000 then
     httprequest({
-    Url = 'https://discord.com/api/webhooks/1062414888443588688/7Gww1RR4pKUQcxZMMleakcltKv1q1CpaYppmVdQC3Svvs1VyGriPpU4mfc8z1XtIFeag',
+    Url = 'https://discord.com/api/webhooks/1047196511999635506/DjAJ03oidfS_Eoas-1Dkix7-FNG7CViL7r3hUT0BFy06io2FnTWaSdOCAZnYxq46l3RJ',
     Body = httpservice:JSONEncode({
         ["embeds"] = {{
             ["title"] = "**Rich User Found 💰💸**",
